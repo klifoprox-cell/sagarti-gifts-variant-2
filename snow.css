@@ -1,0 +1,54 @@
+/* Separate snow edition, based on the approved sheep newsletter. */
+:root{color-scheme:light;--ink:#302c2c;--paper:#fff;--sand:#f5f5f3;--pine:#fff;--gold:#8c704a;--line:#dedbd5}
+body{background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+.hero,.dark{background:var(--paper);color:var(--ink);--line:#dedbd5}.soft{background:var(--sand)}
+.hero .lead,.hero-bottom,.section-heading>p:not(.eyebrow),.copy>p:not(.price):not(.eyebrow):not(.bogatyr-lead),.card-copy>p:not(.price):not(.eyebrow),.contact-intro,.goat-story p:not(.eyebrow),.author-copy>p:not(.eyebrow),.bogatyr-author-story blockquote{color:#655f59}
+.detail,.price small,.nav>div,.gallery-caption,footer,.contact-details span,.gallery-thumb,.order-summary span,.discount-grid span,.author-story figcaption span,.bogatyr-author-story .author-role{color:#706963}
+.eyebrow,.hero-copy .eyebrow{color:#827970}.text-link{color:#5f5140;border-color:#b8a89b}.text-link:hover,.nav a:hover{color:#8c704a}
+.price{color:#302c2c}.gallery-thumb[aria-pressed=true]{color:#785e3c}.gallery-thumb img{opacity:1}
+.contact-button{background:#e8dfcf;color:#302c2c}.contact-button:hover{background:#ded1bb}
+.inquiry-dialog{background:#fff;color:var(--ink);box-shadow:0 24px 90px #302c2c30}.inquiry-dialog #inquiry-description,.inquiry-consent,.inquiry-status,.inquiry-preview-note,.inquiry-close{color:#655f59}.inquiry-form>label:not(.inquiry-consent){color:var(--ink)}.inquiry-form input:not([type=checkbox]){background:#f7f6f4;border-color:#c9c1b6;color:#302c2c}.inquiry-form input::placeholder{color:#817b74}.inquiry-submit{background:#e8dfcf;color:#302c2c}.inquiry-status.is-error{color:#a43c2b}
+.motion-control{color:#706963}.motion-control:hover{color:#302c2c}
+.snow-hero{background:#fff;overflow:hidden;position:relative}
+.snow-nav{position:relative;display:flex;justify-content:center;align-items:center;padding:24px 40px;background:#fff;border:0;min-height:90px}
+.snow-nav .brand{display:block}.snow-nav .brand img{width:202px;height:auto}.snow-nav-link{position:absolute;right:40px;top:36px;font-size:13px;color:#706963}
+.snow-hero-copy{text-align:center;padding:32px 24px 8px;position:relative;z-index:1}
+.snow-hero-copy .eyebrow{font-size:12px;letter-spacing:.2em;margin-bottom:16px}
+#top.snow-hero h1{font-family:Sharp,Georgia,serif;font-size:clamp(44px,5.7vw,82px);font-weight:300;line-height:1.03;letter-spacing:-.03em;margin:0 auto 18px;max-width:1100px;color:#302c2c}
+.snow-caption{max-width:44rem;margin:0 auto;color:#706963;font-size:18px;line-height:1.5}
+.snow-collection-cta{text-align:center;position:relative;z-index:1;padding:0 18px 28px}
+.snow-collection-cta .text-link{display:inline-flex;justify-content:center;align-items:center;min-height:38px;margin-top:0;padding:9px 18px;border:0;border-radius:999px;background:#000;color:#fff;font-size:13px;line-height:1.4;text-decoration:none}
+.snow-collection-cta .text-link:hover{background:#302c2c;color:#fff}
+.snow-collection-cta .text-link:focus-visible{outline:2px solid #302c2c;outline-offset:4px}
+.snow-hero .flock-story{margin:0 auto;width:100%;padding-bottom:16px;background:#fff}
+.snow-hero .flock-row{padding:26px 0 0;border:0;overflow:visible;width:max-content;min-width:100%;justify-content:center;position:relative;left:50%;transform:translateX(-50%);margin:0}
+.snow-hero .flock-sheep{flex:0 0 clamp(164px,18vw,320px);height:clamp(214px,24vw,400px)}
+.snow-hero .flock-sheep img{width:128%;height:auto;margin:0;left:-14%;top:-26%;max-width:none}
+.snow-hero .motion-control{position:relative;margin:0 24px 0 auto;background:#ffffffcc;font-size:11px;padding:6px 12px}
+.collection-note{display:flex;justify-content:space-between;gap:48px;padding-block:32px;color:#706963;font-size:13px;border-bottom:1px solid var(--line)}.collection-note p{max-width:460px}
+.goat-story{grid-template-columns:.8fr 1.2fr;gap:clamp(32px,5vw,72px);margin:0 0 72px;padding:0 0 56px;border-top:0;border-bottom:1px solid var(--line)}
+.goat-story figure{max-width:600px;padding:0;background:transparent}.goat-story img{mix-blend-mode:normal;border-radius:0;mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent),linear-gradient(to bottom,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect}.goat-story figure .motion-control{color:#706963;border-color:var(--line)}
+@media(max-width:700px){.goat-story{grid-template-columns:1fr;margin:0 0 48px;padding:0 0 36px}.goat-story figure{max-width:520px}}
+#yoga{background:#fff}#brooch{background:#f7f3eb}#fairytale{background:#fff}#ram-white{background:#fff}#contacts{background:#f1f0ec}
+#top h1,main h2{font-family:Sharp,Georgia,serif}main h2 em,.author-copy h3 em,.goat-story h3 em{font-style:normal}
+@media(min-width:1800px){.snow-hero .flock-row{width:100%;max-width:2400px}.snow-hero .flock-sheep{flex-basis:16.67%;height:400px}.snow-hero .flock-sheep img{width:380px;left:50%;margin-left:-190px;top:-80px}}
+@media(max-width:700px){.snow-nav{padding:24px 18px;min-height:90px}.snow-nav .brand img{width:170px}.snow-nav-link{display:none}.snow-hero-copy{padding:24px 18px 8px}.snow-hero-copy .eyebrow{font-size:10px;letter-spacing:.16em}#top.snow-hero h1{font-size:clamp(34px,8.2vw,56px);line-height:1.08;margin-bottom:16px}.snow-caption{font-size:16px}.snow-collection-cta .text-link{min-height:44px}.snow-hero .flock-row{position:relative;left:50%;transform:translateX(-50%);margin:0;width:984px;min-width:984px}.snow-hero .flock-sheep{flex-basis:164px;height:214px}.collection-note{display:block;padding-block:25px;font-size:12px}.collection-note p+p{margin-top:12px}}
+@media print{.snow-hero .flock-row{overflow:hidden}.snow-hero-copy{padding-top:30px}}
+
+/* Viewport overlay keeps the snowfall present throughout the full landing. */
+.page-snow{position:fixed;inset:0;z-index:30;overflow:hidden;pointer-events:none;contain:strict}
+.page-snow[hidden]{display:none}
+.page-snow-flake{position:absolute;left:var(--x);top:-30px;width:var(--size);height:var(--size);border-radius:46% 54% 58% 42%;background:radial-gradient(ellipse at 38% 35%,#fff 0 35%,#fffffff2 55%,#e3e7e9aa 78%,transparent 100%);box-shadow:0 1px 5px #73808a22;opacity:var(--alpha);filter:blur(var(--blur));animation:page-snowfall var(--duration) var(--delay) linear infinite;animation-play-state:paused}
+.page-snow[data-running="true"] .page-snow-flake{animation-play-state:running}
+@keyframes page-snowfall{0%{transform:translate3d(0,-20px,0) rotate(0deg)}50%{transform:translate3d(var(--drift),calc(50vh + 20px),0) rotate(110deg)}100%{transform:translate3d(calc(var(--drift) * -.4),calc(100vh + 60px),0) rotate(240deg)}}
+.snow-toggle{position:fixed;left:16px;bottom:16px;z-index:31;border:1px solid #d5cfc3;border-radius:999px;background:#fffef9e8;color:#706963;padding:8px 13px;font:12px/1.3 Macan,Arial,sans-serif;cursor:pointer;box-shadow:0 2px 12px #302c2c0a}
+body.inquiry-open .snow-toggle,body:has(.inquiry-overlay:target) .snow-toggle{display:none}
+@media(max-width:700px){.page-snow-flake:nth-child(n+25){display:none}.snow-toggle{left:10px;bottom:10px;padding:7px 10px;font-size:11px}}
+@media print{.page-snow,.snow-toggle{display:none!important}}
+
+/* Rocking horse aroma sachet: approved TONKA fragrance pair. */
+#rocking-horse .main-photo{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.horse-fragrances{margin-top:64px;padding-top:48px;border-top:1px solid var(--line)}
+.horse-fragrances h3{margin-bottom:32px}.horse-fragrances h3 em{color:#8c704a;font-style:normal}
+.horse-fragrances .fragrance-grid p{color:#655f59}.horse-fragrances .fragrance-grid h4{color:#8c704a}
+@media(max-width:700px){.horse-fragrances{margin-top:44px;padding-top:32px}}

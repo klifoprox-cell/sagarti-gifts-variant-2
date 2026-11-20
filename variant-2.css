@@ -1,0 +1,68 @@
+/* Variant 2: a calmer reading rhythm and clear routes to the boutique. */
+.edition-v2 .section{padding-block:76px}
+.edition-v2 main h2{font-size:clamp(38px,4.5vw,64px);line-height:1.08;margin-bottom:24px}
+.edition-v2 main h2 em{font-style:normal}
+.edition-v2 .section-heading{margin-bottom:36px}
+.edition-v2 .eyebrow{margin-bottom:20px}
+.edition-v2 .product{gap:clamp(36px,6vw,80px)}
+.edition-v2 .product-name,.edition-v2 .ram-details h3.product-name{font-family:Sharp,Georgia,serif;font-size:28px;font-weight:300;line-height:1.2;color:var(--ink);margin:0 0 18px}
+.edition-v2 .copy .price{margin-top:28px}
+.edition-v2 .product-link{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:44px;padding:9px 0;margin-top:22px;color:#433c34;border-color:#a99a88;font-size:16px;line-height:1.4}
+.edition-v2 .product-link:hover{color:#8c704a;border-color:#8c704a}
+.edition-v2 .product-link span{flex-shrink:0}
+.edition-v2 .brooch-caption .product-link{font-size:14px;gap:16px;margin-top:12px}
+.edition-v2 .author-story{grid-template-columns:.85fr 1.15fr;gap:clamp(36px,6vw,72px);margin-bottom:64px;padding-bottom:56px}
+.edition-v2 .author-story figure{max-width:420px}
+.edition-v2 .author-story figcaption{font-size:17px;margin-top:14px}
+.edition-v2 .author-copy h2{font-size:clamp(38px,4vw,56px)}
+.edition-v2 .author-copy>p:not(.eyebrow){font-size:16px;line-height:1.65;max-width:530px}
+.edition-v2 .author-copy .eyebrow{font-size:12px;letter-spacing:.12em}
+.edition-v2 .forest-image{display:block;border-radius:var(--card-radius)}
+.edition-v2 .horse-sets{margin-top:64px;padding-top:56px}
+.edition-v2 .horse-sets .section-heading>p:last-child{max-width:560px}
+.horse-pair-links{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding-top:24px}
+.horse-pair-links h3{font-family:Macan,Arial,sans-serif;font-size:16px;line-height:1.5;margin:0 0 8px}
+.horse-pair-links p{font-family:Sharp,Georgia,serif;font-size:30px;line-height:1.2}
+.horse-pair-links p span,.horse-mobile-price span{font:13px Macan,Arial,sans-serif;color:#706963}
+.edition-v2 .horse-pair-links .product-link{margin-top:12px}
+.horse-mobile{display:none}
+.edition-v2 .landing-bottom-cta{margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+.edition-v2 .boutique-button{gap:28px}
+/* Snow belongs to the opening scene and never covers the products. */
+.edition-v2 .snow-hero{isolation:isolate}
+.edition-v2 .page-snow{position:absolute;z-index:2;--snow-travel:800px}
+.edition-v2 .snow-nav,.edition-v2 .snow-hero-copy,.edition-v2 .snow-collection-cta{z-index:3}
+.edition-v2 .snow-hero .flock-story{position:relative;z-index:1}
+.edition-v2 .snow-hero .motion-control{position:relative;z-index:3}
+.edition-v2 .snow-toggle{position:absolute;z-index:4;bottom:20px}
+@keyframes page-snowfall{0%{transform:translate3d(0,-20px,0) rotate(0deg)}50%{transform:translate3d(var(--drift),calc(var(--snow-travel) * .5),0) rotate(110deg)}100%{transform:translate3d(calc(var(--drift) * -.4),calc(var(--snow-travel) + 60px),0) rotate(240deg)}}
+@media(max-width:700px){
+  .edition-v2 .section{padding-block:52px}
+  .edition-v2 main h2{font-size:40px}
+  .edition-v2 .section-heading{margin-bottom:28px}
+  .edition-v2 .product{gap:28px}
+  .edition-v2 .eyebrow{font-size:11px;margin-bottom:16px}
+  .edition-v2 .product-name,.edition-v2 .ram-details h3.product-name{font-size:26px}
+  .edition-v2 .brooch-caption h3{font-size:24px}
+  .edition-v2 .brooch-caption .product-link{font-size:13px;gap:7px}
+  .edition-v2 .brooch-heading h2 em{display:block}
+  .edition-v2 .author-story{grid-template-columns:1fr;gap:28px;margin-bottom:44px;padding-bottom:40px}
+  .edition-v2 .author-story figure{max-width:none}
+  .edition-v2 .author-copy h2{font-size:40px}
+  .edition-v2 .horse-sets{margin-top:44px;padding-top:40px}
+  .horse-desktop{display:none}
+  .horse-mobile{display:block;min-width:0}
+  .horse-scroll-hint{font-size:12px;line-height:1.5;color:#706963;margin-bottom:14px;display:flex;justify-content:space-between;gap:10px}
+  .horse-carousel{display:grid;grid-auto-flow:column;grid-auto-columns:88%;gap:14px;max-width:100%;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:#b9ada0 #eeebe6}
+  .horse-mobile-card{min-width:0;scroll-snap-align:start;scroll-snap-stop:always}
+  .horse-mobile-image{display:block;width:100%;aspect-ratio:4/5;overflow:hidden;border-radius:8px;background:#e8e7e4}
+  .horse-mobile-image img{width:100%;height:100%;object-fit:cover;max-width:none}
+  .horse-crop-large img{object-position:20% center}
+  .horse-crop-small img{object-position:94% center;transform:scale(1.2);transform-origin:center}
+  .horse-mobile-card h3{font-size:27px;line-height:1.15;margin:18px 0 12px;text-wrap:initial}
+  .horse-mobile-price{font-family:Sharp,Georgia,serif;font-size:30px;line-height:1.2}
+  .edition-v2 .horse-mobile-card .product-link{font-size:14px;margin-top:14px}
+  .edition-v2 .landing-bottom-cta{margin-top:28px;padding-top:30px}
+  .edition-v2 .snow-toggle{bottom:76px;left:12px}
+}
+@media print{.horse-mobile{display:none}.horse-desktop{display:block}}

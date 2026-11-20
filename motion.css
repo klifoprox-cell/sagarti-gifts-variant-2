@@ -1,0 +1,15 @@
+.flock-story{margin:0 0 54px;position:relative;isolation:isolate}
+.flock-row{display:flex;justify-content:center;overflow:hidden;padding:30px 0 12px;border-bottom:1px solid var(--line)}
+.flock-sheep{flex:0 0 clamp(130px,16vw,178px);height:210px;position:relative}
+.flock-sheep img{position:absolute;width:210px;max-width:none;left:50%;top:-48px;margin-left:-105px;transform-origin:50% 91.298%;animation:sheep-sway 3.2s ease-in-out infinite;animation-play-state:paused}
+.flock-sheep:nth-child(2) img{animation-delay:-.194s}.flock-sheep:nth-child(3) img{animation-delay:-.387s}.flock-sheep:nth-child(4) img{animation-delay:-.581s}.flock-sheep:nth-child(5) img{animation-delay:-.774s}.flock-sheep:nth-child(6) img{animation-delay:-.968s}
+[data-motion-active="true"] .flock-sheep img{animation-play-state:running}
+.motion-control{display:block;margin:14px 0 0 auto;border:1px solid var(--line);border-radius:999px;background:transparent;color:#c4cebf;padding:8px 15px;font:inherit;font-size:12px;cursor:pointer}
+.motion-control[hidden]{display:none}.motion-control:hover{color:var(--ink);border-color:var(--gold)}.motion-control:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.goat-story{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(28px,6vw,90px);margin-top:72px;padding-top:56px;border-top:1px solid var(--line)}
+.goat-story h3{font-family:FertilCormorant,Georgia,serif;font-weight:300;font-size:clamp(36px,4.2vw,58px);line-height:1.1;margin:20px 0 26px}.goat-story h3 em{color:var(--gold)}
+.goat-story p:not(.eyebrow){max-width:420px;color:#d6dbce;line-height:1.65}.goat-story figure{margin:0;max-width:420px;justify-self:center;width:100%}.goat-story img{display:block;width:100%;height:auto;mix-blend-mode:screen}
+@keyframes sheep-sway{0%,100%{transform:rotate(-3.4deg)}50%{transform:rotate(3.4deg)}}
+@media(max-width:700px){.flock-story{margin-bottom:32px}.flock-row{padding-top:20px}.flock-sheep{flex-basis:120px;height:180px}.flock-sheep img{width:185px;top:-45px;margin-left:-92.5px}.goat-story{grid-template-columns:1fr;gap:24px;margin-top:48px;padding-top:36px}.goat-story figure{max-width:360px}}
+@media(prefers-reduced-motion:reduce){.flock-sheep img{animation:none}}
+@media print{.flock-sheep img{animation:none}.motion-control{display:none}}

@@ -1,0 +1,30 @@
+/* Separate graphite edition, inspired by offer.sagarti.com. */
+:root{color-scheme:dark;--ink:#f5f2ec;--paper:#0a0b0d;--sand:#111317;--pine:#07080a;--gold:#d4b07a;--line:#363431}
+body{background:var(--paper);color:var(--ink)}
+.hero,.dark{background:var(--pine);color:var(--ink);--line:#363431}
+.soft{background:var(--sand)}
+#bogatyr .main-photo{object-fit:cover;background:var(--sand)}
+.hero{background:radial-gradient(ellipse at 22% 38%,#25221e 0%,#121316 40%,#0a0b0d 75%)}
+.hero-layout{align-items:center}
+.hero-image{border-radius:12px;max-height:790px;width:calc(100% - 40px);margin:28px 40px 28px 0;box-shadow:0 24px 80px #0005}
+.hero-copy .eyebrow,.eyebrow{color:var(--gold)}
+.hero em,.dark em,em,.yoga-fragrances h3 em,.fragrance-grid h4,.discount-grid strong,#bogatyr .bogatyr-lead{color:var(--gold)}
+.hero .lead,.hero-bottom,.section-heading>p:not(.eyebrow),.copy>p:not(.price):not(.eyebrow):not(.bogatyr-lead),.card-copy>p:not(.price):not(.eyebrow),.fragrance-grid p,.intro>p:not(.eyebrow),.contact-intro{color:#c9c5bf}
+.detail{opacity:1;color:#bbb7b0}
+.price{color:var(--ink)}.price small{opacity:1;color:#aaa59d}
+.nav,.hero-bottom{border-color:var(--line)}
+.nav>div,.gallery-caption,footer,.contact-details span{color:#bcb7af}
+.gallery-caption{opacity:1}
+.gallery-thumb{color:#c9c5bf}.gallery-thumb[aria-pressed=true]{color:var(--gold)}
+.gallery-thumb img{opacity:.85}.gallery-thumb[aria-pressed=true] img,.gallery-thumb:hover img{opacity:1}
+.text-link{color:var(--gold);border-color:#847052}.text-link:hover{color:#f0d4ac}
+.intro .packaging-note{background:#171719;border-color:#554a38;color:#e1d8ca}
+.contact-details>div{border-color:var(--line)}
+.contact-button{background:var(--gold);color:#0a0b0d;border-radius:999px;padding:17px 30px}.contact-button:hover{background:#e4c394}
+.contact-details a:hover,.nav a:hover{color:var(--gold)}
+.yoga-fragrances,.horse-sets{border-color:var(--line)}
+.order-summary span,.discount-grid span,#snowflake .product-options span{color:#c9c5bf}
+footer{border-top:1px solid var(--line)}
+::selection{background:#d4b07a;color:#0a0b0d}
+@media(max-width:700px){.hero-image{width:calc(100% - 36px);margin:0 18px 28px;max-height:650px}.hero-copy{padding:42px 24px}.contact-button{width:100%}}
+@media print{html,body,.hero,.dark{background:var(--paper)!important;color:var(--ink)!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
